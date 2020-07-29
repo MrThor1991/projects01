@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>float</title>
+	<meta charset="utf-8">
+	<style type="text/css">	
+		#header{
+			background-color: #39e4c2;
+			border:1px solid #39e4c2;
+			padding: 20px;
+			text-align: center;
+		}
+		#header>div:nth-child(1){
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+		#menu ul{
+			background-color: black;
+			padding: 0px;
+			margin:0px;
+		}
+		#menu ul:after{
+			display: block;
+			content: "";
+			clear: both;
+		}
+		#menu ul li{
+			float: left;
+			list-style-type: none;			
+		}
+		#menu ul li a{
+			display: inline-block;
+			text-decoration: none;
+			padding: 12px 20px;
+			color: white;
+		}
+		#menu ul li a:hover{
+			background-color: #ddd;
+			color: black;
+		}
+		#main:after{
+			display: block;
+			content: "";
+			clear: both;
+		}
+		#main .side{
+			box-sizing: border-box;
+			background-color: #DDD;
+			padding: 10px;
+			float: left;
+			width: 30%;
+		}
+		#main .content{
+			box-sizing: border-box;
+			padding: 10px;
+			float:left;
+			width:70%;
+		}
+		#main .side img{
+			width: 100%;
+		}
+		#main .content p:last-child{
+			text-align: right;
+		}
+		#footer{
+			background-color: #ddd;
+			padding: 15px;
+			text-align: center;
+		}
+		#test{
+			background-color: green;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			left:0px;
+			animation-name: move-right;
+			animation-duration: 5s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+		}
+		@keyframes move-right{
+			0%{left:0px;}
+			100%{left:1000px;}
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div>WE CƠ BẢN</div>
+		<div>(giới thiệu sơ qua trang web)</div>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="">Link 1</a></li>
+			<li><a href="">Link 2</a></li>
+			<li><a href="">Link 3</a></li>
+			<li><a href="">Link 4</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<div class="side">
+			<h4>Thông tin tác giả</h4>
+			<p>-Họ tên:...</p>
+			<p>-Ngày sinh:...</p>
+			<p>-Giới tính:...</p>
+			<p>Địa chỉ:...</p>
+			<p><img src="../image/hugo2.jpg"></p>
+		</div>
+		<div class="content">
+			<h3>Tiêu đề bài viết</h3>
+			<p>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+			<p> Ngày đăng: 02/03/2019</p>
+		</div>
+	</div>
+	<div id="footer">Thông tin bản quyền</div>
+	<div id="test"></div>
+</body>
+</html>

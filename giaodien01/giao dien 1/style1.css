@@ -1,0 +1,105 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+html body{
+	font-family: sans-serif;
+}
+.container{
+	width: 980px;
+}
+.header{
+	width: 100%;
+	height: 100px;
+}
+.header .container{
+	width: 980px;
+	height: 100px;
+	margin:0px auto;
+	background:#cb7802;
+}
+.header .container .logo{
+	margin-left: 25px;
+}
+.nav .container{
+	margin:0px auto;
+	background:#272f54;
+}
+.nav .container div.menu{
+	position: relative;
+}
+.nav .container .menu ul{
+	display: inline-block;
+	width: 700px;
+	list-style-type: none;
+	padding: 0px;
+	margin:0px;
+	height: 40px;
+	position: relative;
+}
+.nav .container .menu ul li a{
+	text-decoration: none;
+	display:inline;
+	height: 40px;
+	float: left;
+	color: #FFF;
+	margin-left:25px;
+	line-height: 40px;
+	font-size: 14px;
+}
+.nav .container .search{
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top:10px;
+}
+.nav .container .search .keyword{
+	margin:0px auto;
+	width: 300px;
+	height: 25px;
+
+}
+.nav .container .search .btn-search{
+	width: 95px;
+	height: 25px;
+	background:#272f54;
+	color: #FFF; 
+	border: 1px solid #FFF;
+}
+.banner .container{
+	width: 980px;
+	margin:0px auto;
+}
+.content .container{
+	width: 980px;
+	margin:0px auto;
+} 
+.content .container h2{
+	text-align:center;
+	margin-top:25px;
+	margin-bottom: 25px;
+	padding: 0px; 
+	color: #272f54;
+}
+.content .container .feature{
+	display: inline-block;
+	width: 300px;
+	height: 400px;
+	border: 1px solid gray;
+	padding: 15px;
+	color: #272f54;
+	margin:10px;
+}
+.content .container .feature h3{
+	color: #bc612d;
+}
+.footer{
+	margin: 0px auto;
+	background:#272f54;
+	width: 980px;
+	height: 25px;
+	color:#FFF ;
+}
+
+
