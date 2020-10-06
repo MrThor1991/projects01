@@ -1,0 +1,410 @@
+*{
+	padding:0px;
+	margin: 0px;
+	box-sizing: border-box;
+    text-decoration: none;
+}
+html body {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    color: #4d4d4d;
+    background: url(../images/bg-body.png);
+    overflow-x: hidden;
+}
+.fleft{
+    float: left;
+}
+.clr{
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+.header-right-top {
+    background: #ed3237;
+    position: relative;
+    height: 36px;
+    padding: 0 40px;
+}
+#header {
+    border-top: 5px solid #cd0006;
+    background-image: url(../images/bg-header.png) repeat-x left bottom #fff;
+}
+#header .container{
+    width: 1170px;
+    margin: 0px auto;
+}
+#header .container .header-left{
+    float: left;
+    width: 20%;
+}
+#header .container .header-right{
+    float: right;
+    width: 80%;
+}
+.header-right-top:before {
+    content: "";
+    width: 50px;
+    height: 36px;
+    background-image: url(../images/header-right-top1.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.header-right-top:after {
+    content: "";
+    width: 50px;
+    height: 36px;
+    background: url(../images/header-right-top2.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.header-right-top .box-ho-tro{
+    position: relative;
+}
+.header-right-top .box-ho-tro .btn-ho-tro{
+    float: right;
+    position: relative;
+    background: url(../images/icon-ho-tro.png) no-repeat left 6px center #fff;
+    color: #666;
+    width: 175px;
+    padding: 7px 10px 4px 33px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    height: 28.5px;
+    z-index: 1;
+    top:5px;
+}
+.header-right-top .box-ho-tro .box-hotro-top{
+    display: none;
+}
+.header-right-top .box-ho-tro:hover .box-hotro-top{
+    display: block;
+    position: absolute;
+    top:35px;
+    right: 0px;
+    width: 380px;
+    background: #fff;
+    border: 1px  solid gray;
+    border-radius: 10px;
+    z-index: 1;
+}
+.header-right-top .box-ho-tro .box-hotro-top .item-hotro-wrapper .item-hotro p{
+    float: left;
+    padding: 15px;
+    margin-right: 15px;
+}
+.header-right-top .box-ho-tro .box-hotro-top .item-hotro-wrapper .item-hotro a img{
+    margin-top:15px;
+
+}
+.header-right-center{
+    padding: 25px 0px 25px 45px;
+}
+.search-box{
+    position: relative;
+    width: 380px;
+}
+.search-form{
+    width: 360px;
+    height: 28px;
+    border:1px solid #bababa;
+    border-radius: 20px;
+}
+.search-form .test{
+    margin-left: 10px;
+    border:none;
+    width: 60px;
+}
+.search-form .test:active{
+    border:none;
+    background: #888;
+}
+.search-form .test option{
+    border:none;
+}
+.search-form input{
+    width: 250px;
+    border:none;
+}
+.search-form button{
+    background: transparent;
+    font-size: 18px;
+    border:none;
+    color: #888;
+    padding-left: 5px;
+}
+.account-box{
+    float: left;
+    border:1px solid #bababa;
+    border-radius: 20px;
+    background: url(../images/icon-account.png) no-repeat left 8px center #fff;
+}
+.account-box ul{
+    list-style: none;
+    margin-left: 25px;
+}
+.account-box ul li{
+    float: left;
+    padding:4px 15px;
+    display: list-item;
+}
+.account-box ul li a{
+    text-align: center;
+    color: #767676;
+    text-decoration: none;
+    font-weight: 700;
+}
+.account-box ul li a:hover{
+    color: #141414;
+}
+.cart-mini{
+    margin-left: 25px;
+    border-radius: 20px;
+    border: 1px solid #bababa;
+    background: url(../images/icon-cart.png) no-repeat left 8px center #fff;
+}
+.cart-mini a{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 6px 15px 5px 45px;
+    color: #767676;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.header-right-bottom{
+}
+.header-right-bottom p{
+    float: left;
+    display: block;
+    width: 165px;
+    height: 37px;
+    margin-left:5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+.header-right-bottom  p a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    color: #000;
+    line-height: 37px;
+}
+.logo a img{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.list-box{
+    position: relative;
+}
+.list-box .btn{
+    width: 230px;
+    background: #00a859;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700px;
+    cursor: pointer;
+    border-bottom: 3px solid #008546;
+    border-radius: 0px;
+    padding: 9px 20px 8px 38px; 
+    background: url(../images/icon-danh-muc.png) no-repeat left 12px center #00a859;
+}
+.menu{
+    background: #fff;
+    padding: 10px 0;
+}
+.lis-box .menu{
+    position: absolute;
+}
+.list-box .menu ul{
+    list-style: none;
+}
+.list-box .menu >ul >li{
+    display: list-item; 
+    border: 1px solid #f7f7f7;  
+    border-radius: 20px;
+    background: #f7f7f7;
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+.list-box .menu ul li a{
+    text-decoration: none;
+    color: #606060;
+    padding: 6px 0 0;
+}
+.list-box .menu ul>li:hover{
+    background: red;
+}
+.list-box .menu ul>li>ul{
+    position: absolute;
+    left: 100%;
+    top:50px;
+    background: #f7f7f7;
+    width: 960px;
+    display: none;
+}
+.list-box .menu ul>li:hover ul{
+    display: block;
+}
+.menu ul>li>ul>li{
+    display: block;
+    width: 16.6%;
+    float: left;
+}
+.menu ul>li>ul>li>a{
+    display: block;
+    position: relative;
+    font-size: 14px;
+}
+.menu ul>li>ul>li>a>span {
+    display: block;
+}
+.menu ul>li>ul>li>a>span>img{
+    width: 150px;
+   margin-left: 5px;
+   position: relative;
+}
+.menu ul>li>ul>li>a>span.text{
+    text-align:center;
+    color: #555;
+    position: relative;
+}
+.menu ul>li>ul>li:hover a{
+    background:#bababa;
+}
+.menu ul>li>ul>li:hover .text{
+    color: red;
+}
+.home-top{
+    background: url(../images/bg-body.png);
+}
+.home-left{
+    
+    float: left;
+    width: 20%;
+}
+.home-right{
+    float: right;
+    width: 80%;
+}
+.container{
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0px auto;
+}
+.container{
+    display: table;
+    content: " ";
+
+}
+.home-box{
+}
+.home-box .box-title{
+    font-size: 17px;
+    font-weight: 700;
+    color: #5d5d5d;
+    border-bottom:1px solid #ccc;
+    position: relative;
+    background:#fff;
+    margin: 0px;
+    padding: 20px;
+}
+.home-box .box-title:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 220px;
+    left: 0;
+    bottom: -2px;
+    background:#ed3237;
+}
+.product-list{
+    margin:
+}
+.product-item{
+    position: relative;
+    float:left;
+    width: 20%;
+    background:#fff;
+    padding: 0 15px 15px 15px;
+}
+.product-item .product-img{
+    border-bottom: 1px dotted #ababab;
+    width: 100%;
+    height: 190px;
+    position: relative;
+}
+.product-item .product-img a img{ 
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.product-item .tp-product_hot{
+    background: url(../images/icon-hot.png) no-repeat;
+    width: 59px;
+    height: 24px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: 1;
+}
+.home-image .clr{
+    height: 10px;
+}
+.product-item:nth-child(5n+1) {
+    clear: both;
+}
+.zing-tooltip {
+    position: absolute;
+    width: 230px;
+    height: auto;
+    float: left;
+    z-index: 99;
+    border: solid 1px #c8c8c8;
+    background: #fff;
+    visibility: hidden;
+}
+.product-img:hover .zing-tooltip{
+    visibility: visible;
+}
+.action a.tp-button{
+    background-color: #bababa;
+    border-radius: 20px;
+    padding:0 5px; 
+}
+.action a span{
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    margin: 5px;
+}
+.action:hover a{
+    cursor: pointer;
+    background:red;
+}
+.footer{
+    background:#fff;
+    margin-top: 20px;
+}
+.footer-widget{
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+}
+.footer-widget h4{
+    border-bottom:2px solid #bababa;
+
+}
+.widget-sub p a{
+    color: #ed2337;
+}
